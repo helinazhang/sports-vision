@@ -1,0 +1,183 @@
+{
+  "multi_camera_calibration": {
+    "camera_1": {
+      "intrinsics": {
+        "fx": 399.7684917833575,
+        "fy": 400.05914003414034,
+        "cx": 318.89825099554184,
+        "cy": 239.89891183691594
+      },
+      "extrinsics": {
+        "rotation_matrix": [
+          [
+            0.9999923006731933,
+            0.001907628037995165,
+            -0.0034292199700603583
+          ],
+          [
+            -0.0019557726959158893,
+            -0.5153275411076262,
+            -0.8569910736577889
+          ],
+          [
+            -0.00340199169550955,
+            0.8569911821782278,
+            -0.5153198425456439
+          ]
+        ],
+        "translation_vector": [
+          0.015136093967259436,
+          0.42870126009926113,
+          6.08365099768
+        ],
+        "camera_position": [
+          0.006398994962167219,
+          -4.992742568262083,
+          3.502471132393721
+        ]
+      }
+    },
+    "camera_2": {
+      "intrinsics": {
+        "fx": 399.50289112484666,
+        "fy": 400.10139912329953,
+        "cx": 318.9040204700057,
+        "cy": 239.79974719426892
+      },
+      "extrinsics": {
+        "rotation_matrix": [
+          [
+            0.7066363225647326,
+            -0.707575395034661,
+            0.0014724040664516047
+          ],
+          [
+            -0.3145018752431064,
+            -0.31594717673231343,
+            -0.895134599925313
+          ],
+          [
+            0.633840420059151,
+            0.6320715480516615,
+            -0.4457935397051142
+          ]
+        ],
+        "translation_vector": [
+          0.36780984586355014,
+          0.7896409473999598,
+          6.298014271434762
+        ],
+        "camera_position": [
+          -4.003500249502827,
+          -3.4710576052494417,
+          3.513907443999006
+        ]
+      }
+    },
+    "camera_3": {
+      "intrinsics": {
+        "fx": 400.0033437854969,
+        "fy": 399.99951860449306,
+        "cx": 319.39016412968044,
+        "cy": 240.0012100059039
+      },
+      "extrinsics": {
+        "rotation_matrix": [
+          [
+            0.7061403565902639,
+            0.7080718826672467,
+            -7.596469529319583e-05
+          ],
+          [
+            0.31370758799619614,
+            -0.31294801168511366,
+            -0.8964658895997898
+          ],
+          [
+            -0.6347860631962416,
+            0.6330069122516707,
+            -0.44311274300500814
+          ]
+        ],
+        "translation_vector": [
+          -0.34993809447321383,
+          0.7791449451634319,
+          6.278272876437483
+        ],
+        "camera_position": [
+          3.988041852274678,
+          -3.4825769410130656,
+          3.480432999064553
+        ]
+      }
+    }
+  },
+  "evaluation": {
+    "camera_1": {
+      "mean_error": 0.6381932283445697,
+      "max_error": 1.4469642321951723,
+      "std_error": 0.39054793709630337,
+      "num_keypoints": 11,
+      "ground_truth_comparison": {
+        "fx_error": 0.23150821664250998,
+        "fy_error": 0.05914003414034141,
+        "cx_error": 1.1017490044581564,
+        "cy_error": 0.10108816308405721,
+        "position_error_m": 0.009986187824372095
+      }
+    },
+    "camera_2": {
+      "mean_error": 0.863008967972263,
+      "max_error": 2.0613058513710936,
+      "std_error": 0.5061845779172603,
+      "num_keypoints": 10,
+      "ground_truth_comparison": {
+        "fx_error": 0.49710887515334434,
+        "fy_error": 0.10139912329952949,
+        "cx_error": 1.0959795299942812,
+        "cy_error": 0.20025280573108262,
+        "position_error_m": 0.032300634035025914
+      }
+    },
+    "camera_3": {
+      "mean_error": 0.9913766560354583,
+      "max_error": 2.5276213243468466,
+      "std_error": 0.6191822399938384,
+      "num_keypoints": 10,
+      "ground_truth_comparison": {
+        "fx_error": 0.0033437854968951797,
+        "fy_error": 0.00048139550693804267,
+        "cx_error": 0.6098358703195572,
+        "cy_error": 0.0012100059039141797,
+        "position_error_m": 0.02879978831676654
+      }
+    }
+  },
+  "optimization_info": {
+    "success": false,
+    "final_cost": 24.64158263954865,
+    "message": "STOP: TOTAL NO. of f AND g EVALUATIONS EXCEEDS LIMIT"
+  },
+  "court_keypoints_used": [
+    "back_left",
+    "back_right",
+    "front_left",
+    "front_right",
+    "net_left",
+    "net_right",
+    "net_center",
+    "service_back_left",
+    "service_back_right",
+    "service_front_left",
+    "service_front_right",
+    "center_service_back",
+    "center_service_front"
+  ],
+  "techniques_demonstrated": [
+    "PnP (Perspective-n-Point) algorithm",
+    "Bundle adjustment optimization",
+    "Multi-camera geometric constraints",
+    "Reprojection error minimization",
+    "Ground truth validation"
+  ]
+}

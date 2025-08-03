@@ -1,0 +1,183 @@
+{
+  "overlay_visualization_info": {
+    "description": "Court overlay showing original synthetic images with reprojected court lines",
+    "color_coding": {
+      "magenta_lines": "Reprojected court lines using calibrated parameters",
+      "red_circles": "Detected court keypoints (with noise)",
+      "green_circles": "Reprojected keypoints using calibrated parameters",
+      "cyan_lines": "Reprojection error vectors (detected to reprojected)",
+      "original_court": "Original synthetic tennis court from simulation"
+    },
+    "interpretation": {
+      "good_calibration": "Magenta lines should align well with original court lines",
+      "keypoint_accuracy": "Short cyan error lines indicate good calibration",
+      "overall_quality": "Visual alignment shows calibration accuracy"
+    }
+  },
+  "multi_camera_calibration": {
+    "camera_1": {
+      "intrinsics": {
+        "fx": 401.2423263285517,
+        "fy": 399.81965448931265,
+        "cx": 320.39593909103473,
+        "cy": 240.43668781685508
+      },
+      "extrinsics": {
+        "rotation_matrix": [
+          [
+            0.9999987837705403,
+            -0.0015392275405005972,
+            0.0002514677298711943
+          ],
+          [
+            -0.0003624425582483444,
+            -0.38616962426206825,
+            -0.9224277152886752
+          ],
+          [
+            0.0015169353422517667,
+            0.9224265022623058,
+            -0.3861697124727622
+          ]
+        ],
+        "translation_vector": [
+          -0.004989015716924475,
+          0.45582626945332994,
+          6.702969868609736
+        ],
+        "camera_position": [
+          -0.005013751403388739,
+          -6.006978470698124,
+          3.008951985751462
+        ]
+      }
+    },
+    "camera_2": {
+      "intrinsics": {
+        "fx": 403.0202007160921,
+        "fy": 399.56113471200746,
+        "cx": 321.85412954409037,
+        "cy": 241.06531027260093
+      },
+      "extrinsics": {
+        "rotation_matrix": [
+          [
+            0.8301309236470242,
+            -0.5575664437913451,
+            -0.0015199877666946526
+          ],
+          [
+            -0.2173069253658916,
+            -0.3210237467036279,
+            -0.921803370703529
+          ],
+          [
+            0.5134786751102336,
+            0.7655477874112352,
+            -0.3876547889512025
+          ]
+        ],
+        "translation_vector": [
+          -0.024343338964659844,
+          -0.01614279720150279,
+          7.849654871176119
+        ],
+        "camera_position": [
+          -4.013930166491384,
+          -6.028041168747138,
+          3.028038815975201
+        ]
+      }
+    },
+    "camera_3": {
+      "intrinsics": {
+        "fx": 400.3415087115153,
+        "fy": 399.95011839635794,
+        "cx": 320.1331749651601,
+        "cy": 240.1206423806714
+      },
+      "extrinsics": {
+        "rotation_matrix": [
+          [
+            0.8314335809037641,
+            0.5556205220887543,
+            -0.0020089747047946638
+          ],
+          [
+            0.211596954301961,
+            -0.31997394781387867,
+            -0.9234952093273333
+          ],
+          [
+            -0.5137557099202678,
+            0.7673998359096915,
+            -0.38360469544845305
+          ]
+        ],
+        "translation_vector": [
+          -0.006218950682577606,
+          -0.01116169842537871,
+          7.8124705892886315
+        ],
+        "camera_position": [
+          4.0212337996583205,
+          -5.995404724353765,
+          2.9865801323656567
+        ]
+      }
+    }
+  },
+  "evaluation": {
+    "camera_1": {
+      "mean_error": 0.7196386982289762,
+      "max_error": 1.3495619186887597,
+      "std_error": 0.39318081514352204,
+      "num_keypoints": 11,
+      "ground_truth_comparison": {
+        "fx_error": 1.2423263285517123,
+        "fy_error": 0.18034551068734572,
+        "cx_error": 0.3959390910347338,
+        "cy_error": 0.43668781685508407,
+        "position_error_m": 0.012408658481637958
+      }
+    },
+    "camera_2": {
+      "mean_error": 1.1895329763105416,
+      "max_error": 2.5683213932073348,
+      "std_error": 0.6923022423591615,
+      "num_keypoints": 12,
+      "ground_truth_comparison": {
+        "fx_error": 3.02020071609212,
+        "fy_error": 0.43886528799254165,
+        "cx_error": 1.8541295440903696,
+        "cy_error": 1.0653102726009251,
+        "position_error_m": 0.04203013067400943
+      }
+    },
+    "camera_3": {
+      "mean_error": 0.8449413952806358,
+      "max_error": 1.5677312448992349,
+      "std_error": 0.4641885420652348,
+      "num_keypoints": 12,
+      "ground_truth_comparison": {
+        "fx_error": 0.3415087115153028,
+        "fy_error": 0.04988160364206351,
+        "cx_error": 0.13317496516009442,
+        "cy_error": 0.12064238067139854,
+        "position_error_m": 0.025535928679370146
+      }
+    }
+  },
+  "optimization_info": {
+    "success": true,
+    "final_cost": 34.93988356579296,
+    "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH"
+  },
+  "techniques_demonstrated": [
+    "Multi-camera bundle adjustment",
+    "Court overlay visualization",
+    "Reprojection error analysis",
+    "Ground truth validation",
+    "Visual calibration assessment"
+  ]
+}
