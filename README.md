@@ -12,6 +12,9 @@ This project implements a complete end-to-end tennis analysis pipeline featuring
 ## Core Components
 
 ### 1. Synthetic Data Generation
+
+refers to generate_synthetic_data.ipynb
+
 - **Purpose**: Generate court and ball trajectories under different camera angles
 - **Output**: Synthetic tennis scenes with ground truth annotations
 ```
@@ -20,17 +23,16 @@ Location: data\simulated
 
 ### 2. Multi-Camera Calibration System
 
-Advanced calibration pipeline using tennis court geometry and bundle adjustment optimization.
+refers to jupyter notebook src/camera_calibration.ipynb
+
+Camera calibration pipeline using tennis court geometry and bundle adjustment optimization.
 
 #### Key Features
 - **Multi-camera bundle adjustment** for simultaneous calibration of 3 cameras
-- **Tennis court keypoint detection** using standardized court geometry
+- **Tennis court keypoint simulation** using standardized court geometry
 - **Performance visualization** with court overlay assessment
 
 #### Court Geometry Standards
-- **Court dimensions**: 12.0m × 6.0m (simplified regulation)
-- **Service lines**: 3.0m from net center
-- **Keypoint network**: 13 strategic court intersections
 - **3D coordinate system**: Court-centered with z=0 at ground level
 
 #### Calibration Performance (Distortion Ignored)
@@ -126,7 +128,7 @@ nmsthre = 0.45         # Optimized NMS for precision-recall balance
 ### Enhanced Dataset: Larger Tennis Balls
 - **Location**: https://universe.roboflow.com/tennis-3ll0a/tennis-ball-icifx
 - **Format**: COCO JSON format
-- **Description**: Close-up tennis ball shots, professional tournament footage, etc.
+- **Description**: Close-up tennis ball shots, and containing professional tournament footage.
 - **Key improvements**: Better coverage of medium/large tennis balls 
 
 
